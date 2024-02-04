@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const jwt = require('jsonwebtoken');
-const data = require("./data");
+const data = require('./data.ts');
 
 const { foods, sample_users, tags } = data;
 
