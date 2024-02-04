@@ -1,6 +1,6 @@
 [build]
   base = "frontend"
-  publish = "dist/"
+  publish = "dist/browser/"
   command = "npm run build:prod"
 
   [[redirects]]
