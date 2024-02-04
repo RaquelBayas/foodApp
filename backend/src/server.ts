@@ -1,6 +1,6 @@
 import express from "express";
 import cors from "cors";
-import jwt from "jsonwebtoken"; 
+import jwt from 'jsonwebtoken';
 import { foods, sample_users, tags } from "./data";
 
 const app = express();
