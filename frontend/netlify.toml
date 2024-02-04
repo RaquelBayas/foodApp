@@ -1,4 +1,4 @@
 [build]
   base = "frontend/"
-  publish = "dist/food-app"
+  publish = "dist/"
   command = "npm run build"
