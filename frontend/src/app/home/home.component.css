@@ -1,0 +1,8 @@
+.container_home {
+    width: auto;
+    height: 100%;
+    background-image: url('../../assets/images/wallpaper.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}

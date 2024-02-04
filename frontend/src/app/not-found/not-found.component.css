@@ -1,0 +1,28 @@
+div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+div img {
+    width: 20rem;
+    height: 20rem;
+}
+div a {
+    font-size: 1rem;
+    background-color: rgb(255, 13, 0);
+    color: white;
+    border-radius: 10rem;
+    padding: .7rem 1rem;
+    margin: 3rem;
+    opacity: .8;
+}
+
+div a:hover {
+    opacity: 1;
+    cursor: pointer;
+}

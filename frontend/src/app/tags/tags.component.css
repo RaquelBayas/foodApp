@@ -1,0 +1,12 @@
+.container_tags {
+    display: flex;
+    justify-content: center;
+}
+.container_tags a {
+    margin-right: .3rem;
+    padding: .7rem;
+    background-color: rgb(169, 48, 46);
+    color: #efefef;
+    border-radius: 0.5rem;
+    font-size: 12px;
+}

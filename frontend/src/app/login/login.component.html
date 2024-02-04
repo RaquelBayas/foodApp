@@ -1,0 +1,36 @@
+<div class="container">
+  <h1>Login</h1>
+  <div>
+    <form [formGroup]="loginForm" (ngSubmit)="submit()">
+      <div>
+        <input type="text" placeholder="Email" formControlName="email" />
+        <div
+          class="errors"
+          *ngIf="formData['email'].hasError('required') && isSubmitted"
+        >
+          <div *ngIf="formData['email'].hasError('required')">
+            Email required
+          </div>
+        </div>
+        <div class="errors" *ngIf="formData['email'].hasError('email') && isSubmitted">
+            <div *ngIf="formData['email'].hasError('email')">Invalid email format</div>
+          </div>
+      </div>
+      <div>
+        <input type="password" placeholder="Password" formControlName="password" />
+        <div
+          class="errors"
+          *ngIf="formData['password'].hasError('required') && isSubmitted"
+        >
+          <div *ngIf="formData['password'].hasError('required')">
+            Password required
+          </div>
+        </div>
+        <div class="errors" *ngIf="(formData['password'].hasError('minlength') || formData['password'].hasError('maxlength')) && isSubmitted">
+            Min length: 7; maxlength: 14
+        </div>
+      </div>
+      <button type="submit">Login</button>
+    </form>
+  </div>
+</div>

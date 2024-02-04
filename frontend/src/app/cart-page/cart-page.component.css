@@ -1,0 +1,85 @@
+.container {
+    width: 90%;
+    height: 40rem;
+    margin: 2rem auto;
+    border: 1px solid black;
+    border-radius: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.container .list {
+    flex: 3 0;
+}
+.container .list ul{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.container .list ul li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.container img {
+    border-radius: 50%;
+    width: 8rem;
+}
+
+.remove-btn {
+    background-color: #dbdbdb;
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+}
+
+.remove-btn:hover {
+    cursor: pointer;
+}
+.checkout {
+    justify-self: flex-end;
+    flex: 1 0;
+    height: 100%;
+    background-color:#dbdbdb;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0 2rem 2rem 0;
+}
+
+.checkout .header {
+    text-align: center;
+}
+
+.checkout .content {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.content .prices {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.checkout .btnPay {
+    justify-self: flex-end;
+}
+.checkout button {
+    width: 100%;
+    background-color: rgb(221, 18, 18);
+    padding: .6rem;
+    color: white;
+    font-size: 1.2rem;
+    border-radius: 1.5rem;
+    border: none;
+    outline: none;
+    align-self: flex-end;
+}
+
+.checkout button:hover {
+    cursor: pointer;
+}
