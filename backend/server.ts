@@ -25,7 +25,7 @@ app.post("/api/users/login", (req, res) => {
   }
 });
 
-const generateTokenResponse = (user: any) => {
+const generateTokenResponse = (user) => {
   const token = jwt.sign(
     {
       email: user.emil,
